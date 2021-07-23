@@ -1,7 +1,7 @@
 import Image from "next/image"
-import { ThumbsUpIcon, ChatAltIcon, ShareIcon } from "@heroicons/react/outline"
+import { ThumbUpIcon, ChatAltIcon, ShareIcon } from "@heroicons/react/outline"
 
-const Post = ({ name, message, email, timestamp, image, postImage }) => {
+const Post = ({ name, message, timestamp, image, postImage }) => {
     return (
         <div className="flex flex-col">
             <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
@@ -44,7 +44,7 @@ const Post = ({ name, message, email, timestamp, image, postImage }) => {
             {/* Footer */}
             <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
                 <div className="inputIcon rounded-none rounded-bl-2xl">
-                    <ThumbsUpIcon className="h-4" />
+                    <ThumbUpIcon className="h-4" />
                     <p className="text-xs sm:text-base">Like</p>
                 </div>
                 <div className="inputIcon rounded-none">
